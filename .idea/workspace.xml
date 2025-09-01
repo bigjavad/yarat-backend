@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="131303ea-f6c0-44f0-a0dc-f66db0e321de" name="Changes" comment="creat car-reservation-reply and car-reservation entity" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2xgigqN62D12wNDZPSBfHtNuHd8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/pouriya-car/yarat-backend/src/core/enum/form",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\pouriya-car\\yarat-backend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\pouriya-car\yarat-backend\src\core\enum\form" />
+      <recent name="C:\pouriya-car\yarat-backend\src\form\car\car-category" />
+      <recent name="C:\pouriya-car\yarat-backend\src\form\gallery" />
+      <recent name="C:\rent-iran\rent-iran-backend\src\form\var-base" />
+      <recent name="C:\rent-iran\rent-iran-backend\src\form\base" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\rent-iran\rent-iran-backend\src\form\car" />
+      <recent name="C:\rent-iran\rent-iran-backend\src\core\model\dto\car" />
+      <recent name="C:\rent-iran\rent-iran-backend\src\entity\car" />
+      <recent name="C:\rent-iran\rent-iran-backend\src\interceptor" />
+      <recent name="C:\rent-iran\rent-iran-backend\src\form\car-category\car-category-subset" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="131303ea-f6c0-44f0-a0dc-f66db0e321de" name="Changes" comment="" />
+      <created>1748366231123</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748366231123</updated>
+      <workItem from="1748366232162" duration="652000" />
+      <workItem from="1749219707159" duration="21592000" />
+      <workItem from="1749535590591" duration="25170000" />
+      <workItem from="1749566603785" duration="7209000" />
+      <workItem from="1749647205361" duration="12246000" />
+      <workItem from="1749679632307" duration="19697000" />
+      <workItem from="1749981812175" duration="594000" />
+      <workItem from="1750060221360" duration="1187000" />
+      <workItem from="1750148013807" duration="593000" />
+      <workItem from="1750436737041" duration="26985000" />
+      <workItem from="1750622207240" duration="6362000" />
+      <workItem from="1750687500026" duration="592000" />
+      <workItem from="1750694203331" duration="2192000" />
+      <workItem from="1750712057844" duration="3023000" />
+      <workItem from="1750847971723" duration="57903000" />
+      <workItem from="1751090905233" duration="22151000" />
+      <workItem from="1751202255740" duration="2824000" />
+      <workItem from="1751230124805" duration="5458000" />
+      <workItem from="1751311399243" duration="1292000" />
+      <workItem from="1751385164955" duration="25721000" />
+      <workItem from="1751577247426" duration="13498000" />
+      <workItem from="1751922987938" duration="17744000" />
+      <workItem from="1752151582340" duration="624000" />
+      <workItem from="1752167294658" duration="38982000" />
+      <workItem from="1752466627632" duration="16736000" />
+      <workItem from="1752583120092" duration="9838000" />
+      <workItem from="1752616204627" duration="10680000" />
+      <workItem from="1752745770697" duration="31172000" />
+      <workItem from="1752877858386" duration="51052000" />
+      <workItem from="1753283577305" duration="3447000" />
+      <workItem from="1753287859267" duration="16955000" />
+      <workItem from="1753537924029" duration="7868000" />
+      <workItem from="1753559612043" duration="33887000" />
+      <workItem from="1754074286649" duration="8462000" />
+      <workItem from="1754298763680" duration="1160000" />
+      <workItem from="1754309454063" duration="2073000" />
+      <workItem from="1754566924376" duration="2594000" />
+      <workItem from="1754752711914" duration="777000" />
+      <workItem from="1754838196154" duration="941000" />
+      <workItem from="1754886986129" duration="7591000" />
+      <workItem from="1755026889949" duration="13287000" />
+      <workItem from="1755179366603" duration="11869000" />
+      <workItem from="1755372862040" duration="25263000" />
+      <workItem from="1755578599655" duration="4584000" />
+      <workItem from="1755608180012" duration="14120000" />
+      <workItem from="1755690461558" duration="75000" />
+      <workItem from="1755690546441" duration="19424000" />
+      <workItem from="1755949792889" duration="1673000" />
+      <workItem from="1756033241372" duration="24598000" />
+      <workItem from="1756239416486" duration="2836000" />
+      <workItem from="1756361803163" duration="1583000" />
+      <workItem from="1756450566746" duration="959000" />
+      <workItem from="1756455609043" duration="1190000" />
+      <workItem from="1756464530175" duration="1319000" />
+      <workItem from="1756472249370" duration="1430000" />
+      <workItem from="1756488561014" duration="30884000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix bug city service">
+      <option name="closed" value="true" />
+      <created>1751235139408</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751235139408</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add controller sentence and fix bug service update user">
+      <option name="closed" value="true" />
+      <created>1751476513913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751476513913</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add lessor reply service and entity">
+      <option name="closed" value="true" />
+      <created>1752272939167</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752272939167</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add car Category Setting">
+      <option name="closed" value="true" />
+      <created>1752941791131</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752941791131</updated>
+    </task>
+    <task id="LOCAL-00005" summary="creat car entity and other realation and creat enum">
+      <option name="closed" value="true" />
+      <created>1753093410577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753093410577</updated>
+    </task>
+    <task id="LOCAL-00006" summary="creat car form and entity">
+      <option name="closed" value="true" />
+      <created>1753476840114</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753476840114</updated>
+    </task>
+    <task id="LOCAL-00007" summary="creat car-reservation-reply and car-reservation entity">
+      <option name="closed" value="true" />
+      <created>1753765445927</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753765445927</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix bug city service" />
+    <MESSAGE value="add controller sentence and fix bug service update user" />
+    <MESSAGE value="add lessor reply service and entity" />
+    <MESSAGE value="add car Category Setting" />
+    <MESSAGE value="creat car entity and other realation and creat enum" />
+    <MESSAGE value="creat car form and entity" />
+    <MESSAGE value="creat car-reservation-reply and car-reservation entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="creat car-reservation-reply and car-reservation entity" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/form/category-menu/category-menu-subset/category-menu-subset.service.ts</url>
+          <line>59</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/core/helper/context.helper.ts</url>
+          <line>14</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/form/lessor/lessor-reply/lessor-reply.controller.ts</url>
+          <line>18</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/form/lessor/lessor-reply/lessor-reply.service.ts</url>
+          <line>24</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/form/lessor/lessor.controller.ts</url>
+          <line>25</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/form/car/car-category/car-category-subset/car-category-subset.service.ts</url>
+          <line>25</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/form/city/city.controller.ts" line="46">
+        <watch expression="id" language="TypeScript" />
+      </inline-watch>
+    </watches-manager>
+  </component>
+</project>
