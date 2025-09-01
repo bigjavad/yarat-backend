@@ -1,13 +1,9 @@
-import {Column, Check, ManyToMany, JoinTable, Entity, JoinColumn, ManyToOne, BeforeInsert, BeforeUpdate} from "typeorm";
+import {Column, Check, Entity, JoinColumn, ManyToOne} from "typeorm";
 import {BasePopularModel} from "../../core/entity/base-popular-model";
 import {UserEntity} from "../user/user.entity";
 import {CarPropertyDto} from "../../core/model/dto/car/car-property.dto";
-import {CarBodyColorEntity} from "./car-body-color.entity";
-import {EN_PostStatusEnum} from "../../core/enum/form/EN_PostStatus.enum";
 import {EN_CarStatusEnum} from "../../core/enum/form/EN_CarStatus.enum";
-import {PropertyValueEntity} from "../property/property-value.entity";
 import {EN_CarCategoryEnum} from "../../core/enum/form/EN_CarCategory.enum";
-import {CreatorSlug} from "../../core/utility/creator-slug";
 
 @Entity("car")
 export class CarEntity extends BasePopularModel{
@@ -63,10 +59,4 @@ export class CarEntity extends BasePopularModel{
     @ManyToOne(() => UserEntity, {nullable: false,onDelete:"CASCADE"})
     @JoinColumn({name: 'creatorId', referencedColumnName: "id"})
     creator: UserEntity;
-
-    @BeforeInsert()
-    @BeforeUpdate()
-    generateSlug() {
-        this.slug = CreatorSlug([this.title]);
-    }
 }

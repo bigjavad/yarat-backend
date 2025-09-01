@@ -15,6 +15,7 @@ import {GetRows} from "../../core/model/base/get-rows";
 import {PropertyValueEntity} from "../../entity/property/property-value.entity";
 import {HtmlProcessorService} from "../../core/service/html-processor.service";
 import {sanitizeInput} from "../../core/utility/sanitize-input";
+import {CreatorSlug} from "../../core/utility/creator-slug";
 
 @Injectable()
 export class CarService extends BaseService<CarEntity> {
@@ -30,6 +31,7 @@ export class CarService extends BaseService<CarEntity> {
     }
 
     async save(carDto: CarDto): Promise<ActionResult<CarEntity>> {
+        carDto.slug = CreatorSlug([carDto.title]);
         carDto.image = await Promise.all(
             carDto.image.map(async (image: string) => {
                 return await this.imageService.saveBase64Image(image, UploadPathConst.CAR);
@@ -45,6 +47,7 @@ export class CarService extends BaseService<CarEntity> {
 
     async update(carDto: CarDto): Promise<ActionResult<CarEntity>> {
         const car: ActionResult<CarEntity> = await this.fineById(carDto.id);
+        carDto.slug = CreatorSlug([carDto.title]);
         car.data.image.map(async (image: string) => {
             return await this.imageService.deleteFile(image);
         })

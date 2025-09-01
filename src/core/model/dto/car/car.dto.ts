@@ -92,6 +92,7 @@ export class CarDto extends BaseEntityModel {
     @IsEnum(EN_CarStatusEnum)
     carStatus: EN_CarStatusEnum;
 
+    slug:string;
     facilitiesList:CarPropertyDto[];
 
 
