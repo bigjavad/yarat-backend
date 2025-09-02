@@ -1,5 +1,6 @@
 
 export class SmsPayloadDto {
     to: string;
-    text: string
+    text: string;
+    from:string;
 }

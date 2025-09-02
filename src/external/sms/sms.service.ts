@@ -32,6 +32,7 @@ export class SmsService {
     sendMessage(phoneNumber:string, text:string){
         let payload:SmsPayloadDto= new SmsPayloadDto();
         payload.to = phoneNumber;
+        payload.from = "50002710018171"
         payload.text =  text;
         return this.request(payload);
     }

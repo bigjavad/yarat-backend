@@ -27,12 +27,13 @@ async function bootstrap() {
         origin: '*',
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         allowedHeaders: '*',
-        credentials: false
+        credentials: true
     });
 
     app.use(passport.initialize());
     app.use(passport.session());
 
+    // await app.listen(process.env.PORT);
 }
 
 bootstrap();
