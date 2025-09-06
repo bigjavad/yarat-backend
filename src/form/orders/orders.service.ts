@@ -13,7 +13,6 @@ import {ActionResult} from "../../core/model/base/action-result";
 import {OrdersDto} from "../../core/model/dto/orders/orders.dto";
 import {PropertyValueEntity} from "../../entity/property/property-value.entity";
 import {EN_OrderStatusEnum} from "../../core/enum/form/EN_OrderStatusEnum";
-import {sendSaveRequestOrder} from "../../core/function/sms-message.function";
 import {SmsService} from "../../external/sms/sms.service";
 import {UserEntity} from "../../entity/user/user.entity";
 import {UserService} from "../user/user.service";
@@ -54,7 +53,7 @@ export class OrdersService extends BaseService<OrdersEntity> {
         if (user.role != EN_RoleEnum.ADMIN) {
             const userDto: UserDto = this.helperService.mapper(user, new UserDto());
             userDto.fullName = this.helperService.creatorFullName([userDto.firstname, userDto.lastname]);
-            await this.smsService.sendMessage(user.phoneNumber, sendSaveRequestOrder(userDto));
+            // await this.smsService.sendMessage(user.phoneNumber, sendSaveRequestOrder(userDto));
         }
         orders.orderStatus = EN_OrderStatusEnum.ORDER_STATUS_UNDER_REVIEW;
         return this.helperService.actionResult(orders, MessageConst.GLOBAL.SAVE, true, EN_Status.success);
@@ -66,6 +65,15 @@ export class OrdersService extends BaseService<OrdersEntity> {
         ordersDto = await this.orders_repository.save(updatedOrders);
         return this.helperService.actionResult<OrdersDto>(ordersDto, MessageConst.USER.UPDATE, true, EN_Status.success);
     }
+
+    async completed(ordersDto: OrdersDto):Promise<ActionResult<OrdersEntity>>{
+        let order:OrdersEntity = await this.ordersStatus(ordersDto.id);
+        order.orderStatus = EN_OrderStatusEnum.ORDER_STATUS_COMPLETED;
+        order = await this.orders_repository.save(order);
+        return this.helperService.actionResult<OrdersEntity>(order, MessageConst.GLOBAL.SUCCESS, true, EN_Status.success);
+    }
+
+
 
     async ordersStatus(id: number): Promise<OrdersEntity> {
         const orders: ActionResult<OrdersEntity> = await super.fineById(id);

@@ -37,7 +37,7 @@ export class AuthService {
             const createUserDto: UserEntity = await this.userService.save(loginDto);
             loginDto = this.helperService.mapper<UserEntity, LoginDto>(createUserDto, loginDto);
             loginDto.token = await this.creatorJwt(createUserDto.id);
-            await this.sendOtp(loginDto);
+            return this.helperService.actionResult<LoginDto>(loginDto, MessageConst.AUTH.LOGIN, true, EN_Status.success);
         }
         if (user.password && loginDto.password) {
             const isPasswordCorrect = await bcrypt.compare(loginDto.password, user.password);
@@ -48,7 +48,10 @@ export class AuthService {
             loginDto.token = await this.creatorJwt(user.id);
             loginDto.fullName = this.helperService.creatorFullName([user.firstname, user.lastname]);
             return this.helperService.actionResult<LoginDto>(loginDto, MessageConst.AUTH.LOGIN, true, EN_Status.success);
-        } else return await this.sendOtp(loginDto);
+        } else {
+            loginDto.token = await this.creatorJwt(user.id);
+            return this.helperService.actionResult<LoginDto>(loginDto, MessageConst.AUTH.LOGIN, true, EN_Status.success);
+        };
     }
 
     async sendOtp(loginDto: LoginDto): Promise<ActionResult<LoginDto>> {
@@ -63,10 +66,10 @@ export class AuthService {
             loginDto = this.helperService.mapper<UserEntity, LoginDto>(user, loginDto);
             loginDto.fullName = this.helperService.creatorFullName([loginDto.firstname, loginDto.lastname]);
             loginDto.token = await this.creatorJwt(loginDto.id);
-            if (hasMessage) {
-                await this.smsService.sendMessage(loginDto.phoneNumber, sendWelcomeUserMessage(loginDto));
-                await this.telegramService.sendMessage(sendTelegramMessageLogin(loginDto));
-            }
+            // if (hasMessage) {
+            //     await this.smsService.sendMessage(loginDto.phoneNumber, sendWelcomeUserMessage(loginDto));
+            //     await this.telegramService.sendMessage(sendTelegramMessageLogin(loginDto));
+            // }
         } else {
             throw new HttpException(EN_ExceptionMessage.AUTH_EXPIRE_CODE, EN_ExceptionStatus.BAD_REQUEST);
         }

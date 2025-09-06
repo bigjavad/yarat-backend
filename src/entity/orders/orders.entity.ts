@@ -10,10 +10,10 @@ export class OrdersEntity extends BaseEntityModel{
     carId:number;
     @Column({nullable:true})
     content:string;
-    @ManyToOne(() => UserEntity)
+    @ManyToOne(() => UserEntity,{nullable:false})
     @JoinColumn({ name: 'creatorId',referencedColumnName: "id" })
     user:UserEntity;
-    @ManyToOne(() => CarEntity)
+    @ManyToOne(() => CarEntity,{nullable:true})
     @JoinColumn({ name: 'carId',referencedColumnName: "id" })
     car:CarEntity;
     @Column({

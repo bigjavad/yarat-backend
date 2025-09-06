@@ -43,4 +43,11 @@ export class OrdersController {
     getRows(@Body() getList: GetRows<OrdersDto, OrdersEntity[]>): Promise<ActionResult<GetRows<OrdersDto, OrdersEntity[]>>> {
         return this.ordersService.getRowsOrders(getList);
     }
+
+    @UseGuards(RoleGuard)
+    @Role(EN_RoleEnum.ADMIN)
+    @Post(REST_CONST.GLOBAL.GET_ROWS)
+    completed(@Body() ordersDto: OrdersDto): Promise<ActionResult<OrdersEntity>> {
+        return this.ordersService.completed(ordersDto);
+    }
 }
